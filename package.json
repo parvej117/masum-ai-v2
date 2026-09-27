@@ -1,7 +1,7 @@
 {
   "name": "masum-ai-v2",
   "version": "2.0.0",
-  "description": "Masum AI Advanced Coding Studio",
+  "description": "Masum AI Advanced Coding Assistant",
   "main": "server.js",
   "type": "module",
   "scripts": {
