@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Masum AI - Advanced Personal Coding Assistant">
+
+    <title>Masum AI — Advanced Coding Studio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         BACKGROUND
+    =============================== -->
+
+    <div class="background-grid"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- ==============================
+         APP
+    =============================== -->
+
+    <div class="app">
+
+
+        <!-- ==========================
+             SIDEBAR
+        =========================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    M
+                </div>
+
+                <div class="logo-text">
+                    <h2>Masum AI</h2>
+                    <span>Advanced Coding Studio</span>
+                </div>
+
+            </div>
+
+
+            <!-- New Project -->
+
+            <button
+                class="new-project"
+                id="newProjectBtn">
+
+                <span>＋</span>
+
+                New Project
+
+            </button>
+
+
+            <!-- Navigation -->
+
+            <div class="nav-title">
+                WORKSPACE
+            </div>
+
+            <nav class="navigation">
+
+                <button
+                    class="nav-item active"
+                    data-panel="chatPanel">
+
+                    <span>🤖</span>
+                    AI Chat
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-panel="editorPanel">
+
+                    <span>💻</span>
+                    Code Editor
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-panel="previewPanel">
+
+                    <span>👁</span>
+                    Live Preview
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-panel="filesPanel">
+
+                    <span>📁</span>
+                    Files
+
+                </button>
+
+            </nav>
+
+
+            <!-- Tools -->
+
+            <div class="nav-title">
+                AI TOOLS
+            </div>
+
+            <nav class="navigation">
+
+                <button
+                    class="nav-item"
+                    data-mode="generate">
+
+                    <span>⚡</span>
+                    Generate
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-mode="debug">
+
+                    <span>🐛</span>
+                    Debug
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-mode="improve">
+
+                    <span>✨</span>
+                    Improve
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-mode="explain">
+
+                    <span>💡</span>
+                    Explain
+
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+                <div class="connection">
+
+                    <span class="connection-dot"></span>
+
+                    <span>
+                        AI Connected
+                    </span>
+
+                </div>
+
+                <div class="version">
+                    MASUM AI V2.0
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ==========================
+             MAIN
+        =========================== -->
+
+        <main class="main">
+
+
+            <!-- ======================
+                 TOPBAR
+            ======================= -->
+
+            <header class="topbar">
+
+                <div class="top-left">
+
+                    <button
+                        class="mobile-menu"
+                        id="mobileMenu">
+
+                        ☰
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="top-label">
+                            PERSONAL AI
+                        </span>
+
+                        <h1>
+                            Advanced Coding Studio
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="top-right">
+
+                    <div class="model-badge">
+                        <span></span>
+                        AI Ready
+                    </div>
+
+
+                    <button
+                        class="top-button"
+                        id="clearBtn"
+                        title="Clear">
+
+                        🗑
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ======================
+                 WORKSPACE
+            ======================= -->
+
+            <section class="workspace">
+
+
+                <!-- ==================
+                     AI CHAT PANEL
+                =================== -->
+
+                <div
+                    class="panel active"
+                    id="chatPanel">
+
+
+                    <!-- Welcome -->
+
+                    <div
+                        class="welcome"
+                        id="welcome">
+
+                        <div class="ai-logo">
+                            ✦
+                        </div>
+
+                        <span class="welcome-label">
+                            WELCOME TO MASUM AI
+                        </span>
+
+                        <h2>
+                            Build anything with AI.
+                        </h2>
+
+                        <p>
+                            Your personal AI coding assistant for
+                            websites, applications, debugging and
+                            modern UI development.
+                        </p>
+
+
+                        <!-- Quick Actions -->
+
+                        <div class="quick-actions">
+
+
+                            <button
+                                class="quick-card"
+                                data-prompt="Build a modern responsive portfolio website using HTML, CSS and JavaScript.">
+
+                                <div>
+                                    🌐
+                                </div>
+
+                                <strong>
+                                    Build Website
+                                </strong>
+
+                                <small>
+                                    HTML • CSS • JS
+                                </small>
+
+                            </button>
+
+
+                            <button
+                                class="quick-card"
+                                data-prompt="Create a premium futuristic dashboard UI with responsive design.">
+
+                                <div>
+                                    🎨
+                                </div>
+
+                                <strong>
+                                    Design UI
+                                </strong>
+
+                                <small>
+                                    Modern interface
+                                </small>
+
+                            </button>
+
+
+                            <button
+                                class="quick-card"
+                                data-prompt="Debug this JavaScript code and explain the problem clearly.">
+
+                                <div>
+                                    🐛
+                                </div>
+
+                                <strong>
+                                    Debug Code
+                                </strong>
+
+                                <small>
+                                    Find & fix errors
+                                </small>
+
+                            </button>
+
+
+                            <button
+                                class="quick-card"
+                                data-prompt="Explain this JavaScript concept with simple examples.">
+
+                                <div>
+                                    💡
+                                </div>
+
+                                <strong>
+                                    Learn Coding
+                                </strong>
+
+                                <small>
+                                    Simple explanation
+                                </small>
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chat Messages -->
+
+                    <div
+                        class="chat-messages"
+                        id="chatMessages">
+
+                    </div>
+
+
+                    <!-- Chat Input -->
+
+                    <div class="chat-area">
+
+                        <div class="selected-mode">
+
+                            Mode:
+
+                            <button
+                                class="mode-button active"
+                                data-mode="generate">
+
+                                Generate
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <textarea
+                                id="promptInput"
+                                rows="1"
+                                placeholder="Ask Masum AI to build something..."></textarea>
+
+
+                            <button
+                                id="sendBtn"
+                                class="send-button">
+
+                                ➜
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="input-hint">
+
+                            <span>
+                                Enter to send
+                            </span>
+
+                            <span>
+                                Shift + Enter = new line
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================
+                     CODE EDITOR
+                =================== -->
+
+                <div
+                    class="panel"
+                    id="editorPanel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                CODE EDITOR
+                            </span>
+
+                            <h2>
+                                index.html
+                            </h2>
+
+                        </div>
+
+
+                        <div class="editor-actions">
+
+                            <button id="saveCode">
+                                💾 Save
+                            </button>
+
+                            <button id="runCode">
+                                ▶ Run
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="editor-container">
+
+                        <div class="line-numbers" id="lineNumbers">
+                            1
+                        </div>
+
+                        <textarea
+                            id="codeEditor"
+                            spellcheck="false"><!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+
+<body>
+
+    <h1>Hello Masum AI</h1>
+
+    <p>
+        Start building something amazing.
+    </p>
+
+</body>
+</html></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================
+                     LIVE PREVIEW
+                =================== -->
+
+                <div
+                    class="panel"
+                    id="previewPanel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                LIVE PREVIEW
+                            </span>
+
+                            <h2>
+                                Browser Preview
+                            </h2>
+
+                        </div>
+
+
+                        <button id="refreshPreview">
+                            ↻ Refresh
+                        </button>
+
+                    </div>
+
+
+                    <div class="preview-container">
+
+                        <iframe
+                            id="livePreview"
+                            title="Live Preview"
+                            sandbox="allow-scripts">
+
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================
+                     FILE MANAGER
+                =================== -->
+
+                <div
+                    class="panel"
+                    id="filesPanel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                PROJECT
+                            </span>
+
+                            <h2>
+                                Project Files
+                            </h2>
+
+                        </div>
+
+
+                        <button id="newFileBtn">
+                            ＋ New File
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="file-list"
+                        id="fileList">
+
+                        <div
+                            class="file-item active"
+                            data-file="index.html">
+
+                            <span>
+                                🌐
+                            </span>
+
+                            index.html
+
+                        </div>
+
+
+                        <div
+                            class="file-item"
+                            data-file="style.css">
+
+                            <span>
+                                🎨
+                            </span>
+
+                            style.css
+
+                        </div>
+
+
+                        <div
+                            class="file-item"
+                            data-file="script.js">
+
+                            <span>
+                                ⚡
+                            </span>
+
+                            script.js
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

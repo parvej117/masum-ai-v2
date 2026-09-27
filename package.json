@@ -1,0 +1,16 @@
+{
+  "name": "masum-ai-v2",
+  "version": "2.0.0",
+  "description": "Masum AI Advanced Coding Studio",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^5.12.2"
+  }
+}
